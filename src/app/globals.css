@@ -1,26 +1,66 @@
 @import "tailwindcss";
 
+/* infinite moving cards */
+@theme inline {
+  --animate-scroll: scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite;
+
+  @keyframes scroll {
+    to {
+      transform: translate(calc(-50% - 0.5rem));
+    }
+  }
+}
+
+/* spotlight */
+@theme inline {
+  --animate-spotlight: spotlight 2s ease 0.75s 1 forwards;
+
+  @keyframes spotlight {
+    0% {
+      opacity: 0;
+      transform: translate(-72%, -62%) scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(-50%, -40%) scale(1);
+    }
+  }
+}
+
+/* Custom dark variant tied to data-theme */
+
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));      
+
+
+/* Default variables (light mode fallback)  */
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Force dark mode variables when data-theme="dark" */
+html[data-theme="dark"] {
+  --background: #0a0a0a; /* Dark background */
+  --foreground: #ededed; /* Light text */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Apply styles to body and navbar */
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+nav {
+  background: var(--background);
+  color: var(--foreground);
+  padding: 1rem;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+main {
+  background: var(--background);
+  color: var(--foreground);
 }
