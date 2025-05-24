@@ -2,7 +2,7 @@
 
 A sleek and responsive **Musical Academy** website built using **Next.js**, **Acertinity UI**, and **Tailwind CSS**. The site features beautifully animated cards, smooth navigation through multiple routes, and a modern user interface perfect for showcasing musical courses, events, or instructors.
 
-![Screenshot of Musical Academy](./public/screenshot.png)
+![Screenshot of Musical Academy](Screenshot(492).png)
 
 ## 🚀 Features
 
@@ -23,10 +23,10 @@ A sleek and responsive **Musical Academy** website built using **Next.js**, **Ac
 
 ## 💻 How to Run Locally
 
-# 1. Clone the repository
+- 1. Clone the repository
 git clone https://github.com/your-username/musical-academy.git
 
-# 2. Navigate to the project directory
+-2. Navigate to the project directory
 cd musical-academy
 
 # 3. Install dependencies
