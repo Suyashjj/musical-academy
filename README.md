@@ -23,21 +23,24 @@ A sleek and responsive **Musical Academy** website built using **Next.js**, **Ac
 
 ## 💻 How to Run Locally
 
-- 1. Clone the repository
-git clone https://github.com/your-username/musical-academy.git
+- Clone the repository  
+  `git clone https://github.com/your-username/musical-academy.git`
 
--2. Navigate to the project directory
-cd musical-academy
+- Navigate to the project directory  
+  `cd musical-academy`
 
-# 3. Install dependencies
-npm install
-# or
-yarn install
+- Install dependencies  
+  `npm install`  
+  or  
+  `yarn install`
 
-# 4. Start the development server
-npm run dev
-# or
-yarn dev
+- Start the development server  
+  `npm run dev`  
+  or  
+  `yarn dev`
+
+
+
 
 
 
