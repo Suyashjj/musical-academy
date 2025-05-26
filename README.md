@@ -1,6 +1,6 @@
 # 🎵 Musical Academy
 
-A sleek and responsive **Musical Academy** website built using **Next.js**, **Acertinity UI**, and **Tailwind CSS**. The site features beautifully animated cards, smooth navigation through multiple routes, and a modern user interface perfect for showcasing musical courses, events, or instructors.
+A sleek and responsive **Musical Academy** website built using **Next.js**, **Acertinity UI**, and **Tailwind CSS**. The site features beautifully animated cards, smooth navigation through multiple routes, and a modern user interface perfect for showcasing musical courses, events, or instructors .
 
 <p align="center">
   <img src="Screenshot (494).png" alt="Smart Summarizer Screenshot 1" width="800"/>
